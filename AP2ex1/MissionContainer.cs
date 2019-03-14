@@ -26,7 +26,6 @@ namespace Excercise_1
                 }
                 else
                 {
-                    //TODO Check !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                     funcsDictionary[funcIndex] = val => val;
                     return funcsDictionary[funcIndex];
                 }
@@ -34,5 +33,6 @@ namespace Excercise_1
             }
             set { funcsDictionary[funcIndex] = value; }
         }
+        public ICollection<string> getAllMissions() { return this.funcsDictionary.Keys; }
     }
 }

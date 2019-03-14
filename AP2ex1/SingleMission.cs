@@ -19,16 +19,17 @@ namespace Excercise_1
             this.type = "Single";
         }
 
-        public string Name => this.name;
+        public string Name { get { return this.name; } }
 
-        public string Type => this.type;
+        public string Type { get { return this.type; } }
 
         public event EventHandler<double> OnCalculate;
 
         public double Calculate(double value)
         {
-            OnCalculate?.Invoke(this, this.funcsDelegate(value));
-            return this.funcsDelegate(value);
+            double result= this.funcsDelegate(value);
+            OnCalculate?.Invoke(this, result);
+            return result;
         }
     }
 }
