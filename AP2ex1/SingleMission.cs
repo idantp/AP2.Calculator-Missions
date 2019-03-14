@@ -27,6 +27,7 @@ namespace Excercise_1
 
         public double Calculate(double value)
         {
+            OnCalculate?.Invoke(this, this.funcsDelegate(value));
             return this.funcsDelegate(value);
         }
     }
