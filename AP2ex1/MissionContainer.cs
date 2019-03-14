@@ -19,7 +19,19 @@ namespace Excercise_1
 
        public FuncsDelegate this [string funcIndex]
         {
-            get { return  funcsDictionary[funcIndex]; }
+            get {
+                if (funcsDictionary.ContainsKey(funcIndex))
+                {
+                    return funcsDictionary[funcIndex];
+                }
+                else
+                {
+                    //TODO Check !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    funcsDictionary[funcIndex] = val => val;
+                    return funcsDictionary[funcIndex];
+                }
+               
+            }
             set { funcsDictionary[funcIndex] = value; }
         }
     }
