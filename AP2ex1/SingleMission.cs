@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * Author: Idan Twito
+ * ID: 311125249
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +12,15 @@ namespace Excercise_1
 {
     public class SingleMission : IMission
     {
+        //points to an arithmetic method
         private FuncsDelegate funcsDelegate;
         private string name;
         private string type;
 
-        public SingleMission(FuncsDelegate funcsDelegate1,string name1)
+        public SingleMission(FuncsDelegate funcsDelegateArg,string nameArg)
         {
-            this.funcsDelegate = funcsDelegate1;
-            this.name = name1;
+            this.funcsDelegate = funcsDelegateArg;
+            this.name = nameArg;
             this.type = "Single";
         }
 
@@ -27,7 +32,9 @@ namespace Excercise_1
 
         public double Calculate(double value)
         {
-            double result= this.funcsDelegate(value);
+            //calculates the result of the arithmetic method
+            double result = this.funcsDelegate(value);
+            //calls all the methods that are registered to OnCalculate event.
             OnCalculate?.Invoke(this, result);
             return result;
         }
