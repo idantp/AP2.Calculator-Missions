@@ -10,12 +10,6 @@ using System.Threading.Tasks;
 
 namespace Excercise_1
 {
-    /*
-     * this class describes a composed mission and is able to calculate a various
-     * arithmetic missions on values. each mission contains name,
-     * type and list of FuncsDelegate (delegate. - responsible for 
-     * arithmetic functions implementaions).
-     */
     public class ComposedMission : IMission
     {
         private string name;
@@ -40,13 +34,7 @@ namespace Excercise_1
             this.funcsList.Add(funcsDelegateArg);
             return this;
         }
-        /**
-        * method name: Calculate
-        * method input: double value
-        * method output: double result
-        * method operation: the method calculates the arithmetic operations (of this class)
-        * on the given value and returns the result.
-        */
+
         public double Calculate(double value)
         {
             //calculates the result of all the composed arithmetic methods

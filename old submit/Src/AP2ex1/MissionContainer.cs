@@ -13,10 +13,6 @@ namespace Excercise_1
     //points to arithmetic methods.
     public delegate double FuncsDelegate(double num);
 
-    /*
-     * this class contains a Dictionary which is consists of names of arithmetic method
-     * (strings) and it's corresponding implementation (FuncsDelegate).
-     */
     public class FunctionsContainer
     {
         //each key is a function description and it's value is it's implementation. 
@@ -27,9 +23,8 @@ namespace Excercise_1
         }
         //Indexer - each index is a string and the value is an arithmetic method
         public FuncsDelegate this [string funcIndex]{
-            //returns the matching implementation to the arithmetic method name
-            get
-            {
+            get {
+                //returns the matching implementation to the arithmetic method name
                 if (funcsDictionary.ContainsKey(funcIndex)) {
                     return funcsDictionary[funcIndex];
                 }
@@ -41,18 +36,9 @@ namespace Excercise_1
                 }
                
             }
-            /* if the string (the method name) exists:
-             * then sets the matching implementation to the arithmetic method name
-             * otherwise - adds new implementation with the given arithmetic method name
-             */
             set { funcsDictionary[funcIndex] = value; }
         }
-        /**
-         * method name: getAllMissions
-         * method input: None
-         * method output: this.funcsDictionary.Keys
-         * method operation: returns all the arithmetic method names that this mission contains.
-         */
+        //reutrns all the arithmetic method names
         public ICollection<string> getAllMissions() { return this.funcsDictionary.Keys; }
     }
 }
