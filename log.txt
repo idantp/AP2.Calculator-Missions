@@ -1,0 +1,41 @@
+commit ffa168e72e22f2f6cfd825a5a83c758da62e6cae
+Author: idant <idant@LAPTOP-1CBL0P6J>
+Date:   Sun Mar 17 18:20:57 2019 +0200
+
+    Coding Style
+
+commit 487910fe8c2961ec321b0512954224a2ed7542cf
+Author: idant <idant@LAPTOP-1CBL0P6J>
+Date:   Fri Mar 15 01:01:22 2019 +0200
+
+    Coding Style
+
+commit bde035cb086d7ddf86c43b6f3cc4cccdf87cf380
+Author: idant <idant@LAPTOP-1CBL0P6J>
+Date:   Fri Mar 15 00:29:54 2019 +0200
+
+    ComposedMission
+
+commit 21b4e3d7e1cdc69eb055495959c25be62a97d049
+Author: idant <idant@LAPTOP-1CBL0P6J>
+Date:   Thu Mar 14 19:00:45 2019 +0200
+
+    Single mission
+
+commit 3afe5d9242e3a9cfe7c33e2267c16c0acbbb7a15
+Author: idant <idant@LAPTOP-1CBL0P6J>
+Date:   Thu Mar 14 18:13:14 2019 +0200
+
+    Single Mission
+
+commit 784c8bd2ad2371d472bbebbc2dd15e217e808535
+Author: idant <idant@LAPTOP-1CBL0P6J>
+Date:   Thu Mar 14 17:08:06 2019 +0200
+
+    check
+
+commit 088ec9cafe43f9b163b3e9ac526b3e52dfb0523f
+Author: idant <idant@LAPTOP-1CBL0P6J>
+Date:   Thu Mar 14 16:58:53 2019 +0200
+
+    Add .gitignore and .gitattributes.
